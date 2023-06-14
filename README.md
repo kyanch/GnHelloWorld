@@ -22,4 +22,20 @@
 
 原英文解释在 [gn-reference](https://gn.googlesource.com/gn/+/main/docs/reference.md) 中 _Overall build flow_ 部分
 
+## 语法帮助
+使用gn ninja的命令中的help
+
+```bash
+gn help group
+```
+查看ninja的实用工具
+```bash
+ninja -t list
+```
+可以使用ninja生成一个编译流程图
+```bash
+$ ninja -t graph all | dot -Tpng -oall.png
+```
+![ 生成的编译流程 ](out/all.png)
+如果没有dot命令，安装`graphviz`包
 
