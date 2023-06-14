@@ -1,0 +1,14 @@
+root_out_dir = .
+target_output_name = hello
+
+build obj/src/hello.o: cc ../src/hello.c
+  source_file_part = hello.c
+  source_name_part = hello
+
+build ./hello: link obj/src/hello.o
+  ldflags =
+  libs =
+  frameworks =
+  swiftmodules =
+  output_extension = 
+  output_dir = 
