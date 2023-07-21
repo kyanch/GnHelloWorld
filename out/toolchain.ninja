@@ -1,9 +1,0 @@
-rule stamp
-  command = touch ${out}
-rule link
-  command = clang ${in} -o ${root_out_dir}/${target_output_name}${output_extension}
-rule cc
-  command = clang -c ${in} -o ${out}
-
-build obj/all.stamp: stamp ./hello
-subninja obj/src/hello.ninja

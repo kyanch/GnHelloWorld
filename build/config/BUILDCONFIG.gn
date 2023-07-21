@@ -1,2 +1,0 @@
-
-set_default_toolchain("//build/config/toolchains:clang")
